@@ -30,8 +30,14 @@ mv .env.example .env
 
 Run Laravel Sail
 ```sh
-php artisan sail:install
+composer install
 ./vendor/bin/sail up
+```
+
+Compile assets
+```sh
+./vendor/bin/sail npm install
+./vendor/bin/sail npm run dev
 ```
 
 Once the application's Docker containers have been started, you can access the application in your web browser at: http://localhost.
