@@ -18,9 +18,19 @@ Clone this repository on your local environment
 git clone https://github.com/andynjoro/laravel-blog.git
 ```
 
-Run Laravel Sail
+Navigate to application directory
 ```sh
 cd laravel-blog
+```
+
+Rename .env.example to .env
+```sh
+mv .env.example .env
+```
+
+Run Laravel Sail
+```sh
+php artisan sail:install
 ./vendor/bin/sail up
 ```
 
